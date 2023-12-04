@@ -1,0 +1,279 @@
+.box-insta {
+  &:hover .hover-insta {
+    opacity: 1;
+    @include transition-5;
+  }
+  .hover-insta {
+    background: #1a1a1ac4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 92%;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    @include flexrow-center;
+  }
+  .like {
+    font-size: 2.5rem;
+    color: white;
+    padding: 10px;
+    margin-left: 20px;
+    .vidLikeNumber {
+      font-size: 2.5rem;
+      color: white;
+    }
+  }
+  .comnt {
+    font-size: 2.5rem;
+    color: white;
+    padding: 10px;
+    margin-left: 20px;
+    .vidLikeNumber {
+      font-size: 2.5rem;
+      color: white;
+    }
+  }
+}
+
+/* The Modal (background) */
+
+.mpdal-race {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #262626a3;
+  padding: 50px 20px;
+}
+
+.box-modal {
+  margin: auto;
+  @include flexrow-center;
+  .coment {
+    background: rgb(255, 255, 255);
+    position: relative;
+    .header-insta {
+      height: 72px;
+      padding: 16px;
+      right: 0;
+      box-shadow: 0px 3px 15px -5px #d9d9d9b3;
+      .img-coment-insta {
+        .img-insta-poro {
+          background-color: #fafafa;
+          @include rounded-50;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          display: block;
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+          overflow: hidden;
+          width: 37px;
+          top: 18px;
+        }
+      }
+      .span-insta {
+        float: left;
+        padding-left: 16px;
+        .img-insta-poro {
+          background-color: #fafafa;
+          @include rounded-50;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          display: block;
+          -webkit-box-flex: 0;
+          -webkit-flex: 0 0 auto;
+          -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+          overflow: hidden;
+          width: 37px;
+          top: 18px;
+        }
+      }
+      .h6-titr {
+        float: left;
+        padding: 9px 12px;
+        font-size: 1.5rem;
+      }
+    }
+    .coment-text {
+      max-height: 360px;
+      min-height: 195px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      @media (max-width: 1199px) {
+        max-height: 290px;
+      }
+      @media (max-width: 992px) {
+        max-height: 195px;
+      }
+      ul {
+        @include d-flex;
+        flex-direction: column;
+        li {
+          text-align: right;
+          .header-insta-in {
+            direction: ltr;
+            border-bottom: 1px solid #efefef;
+            .img-coment-insta {
+              float: left;
+              margin: 0 12px;
+              .img-insta-poro {
+                background-color: #fafafa;
+                @include rounded-50;
+                width: 65px;
+                height: 56px;
+                margin: 9px 0;
+                .p-titr {
+                  font-size: 1.3rem;
+                  line-height: 30px;
+                }
+              }
+            }
+            .tex-coment-insta {
+              padding: 0 15px;
+              .h6-titr {
+                @include d-flex;
+              }
+              .p-titr {
+                text-align: justify;
+                direction: rtl;
+              }
+            }
+            .span-insta {
+              float: left;
+            }
+          }
+          .Slqrh {
+            padding-top: 4px;
+            @include d-flex;
+            position: absolute;
+            bottom: 49px;
+          }
+        }
+      }
+    }
+    .box-c-l {
+      @include d-flex;
+      justify-content: flex-end;
+      align-items: center;
+      border-bottom: 1px solid #efefef;
+      border-top: 1px solid #efefef;
+      padding: 10px;
+      .like-coment {
+        background: white;
+        border: none;
+        @include flexrow-center;
+        direction: ltr;
+        cursor: pointer;
+        .icon-like-coment {
+          font-size: 2rem;
+          margin-right: 5px;
+        }
+      }
+    }
+    .box-coment {
+      padding: 12px 10px;
+      width: 100%;
+      .box-coment-text {
+        .box-coment-form {
+          @include d-flex;
+          flex-grow: 1;
+          justify-content: space-between;
+          .box-coment-button {
+            background: 0 0;
+            border: 0;
+            cursor: pointer;
+            display: block;
+            font-weight: 600;
+            padding: 5px 9px;
+            text-align: center;
+            text-transform: inherit;
+            text-overflow: ellipsis;
+            color: #3897f0;
+            font-size: 1.3rem;
+            line-height: 18px;
+          }
+          .box-coment-textaree {
+            background: 0 0;
+            border: 0;
+            color: #262626;
+            font-size: inherit;
+            height: 40px;
+            max-height: 80px;
+            outline: 0;
+            padding: 0;
+            resize: none;
+            padding-top: 8px;
+            direction: ltr;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .img-insta {
+    img {
+      width: 100%;
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+  }
+}
+.mpdal-race div.row {
+  width: 100%;
+}
+/* The Modal Close Button (x) */
+
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+.box-group-race {
+  position: relative;
+
+  .titr-group-race {
+    position: absolute;
+    bottom: 5px;
+    background: $color-base;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    p {
+      margin: 0;
+      padding: 9px 0;
+      color: $color-text;
+      @include lintxt-1;
+    }
+  }
+}
+.col-group .box-group-race {
+  overflow: hidden;
+}
+.col-group .box-group-race img {
+  @include transition-5-0;
+}
+.col-group .box-group-race:hover img {
+  @include transform-scale;
+}

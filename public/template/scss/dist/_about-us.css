@@ -1,0 +1,99 @@
+.about-us {
+  background: #ffffff57;
+  -webkit-box-shadow: 0px 0px 6px 0px #7f212554;
+  box-shadow: 0px 0px 6px 0px #7f212554;
+  padding: 25px;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  text-align: justify;
+}
+.about-us .widget-title p {
+  font-size: 1.8rem;
+}
+
+.servise {
+  background: #ffffff57;
+  -webkit-box-shadow: 0px 0px 6px 0px #7f212554;
+  box-shadow: 0px 0px 6px 0px #7f212554;
+  padding: 25px;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  text-align: justify;
+}
+
+.servise-text p {
+  font-size: 1.4rem;
+  line-height: 3rem;
+  text-align: justify;
+}
+
+.video-servis video {
+  width: 100%;
+  max-width: 700px;
+}
+
+.servise-form .input-group-prepend {
+  margin-right: 0;
+  margin-left: -1px;
+}
+
+.servise-form textarea.form-control {
+  height: auto;
+}
+
+.servise-form .input-group > .form-control:not(:first-child) {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.servise-form .form-control,
+.servise-form .custom-select,
+.servise-form .custom-file-label {
+  font-size: 1.3rem;
+  display: block;
+  height: calc(3.25rem + 2px);
+}
+
+.servise-form .input-group-text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  border-left: 0px;
+}
+
+.titel-servise {
+  font-size: 19px;
+  margin-top: 3%;
+  text-align: center;
+  font-weight: 600;
+}
+
+.servise-form .input-group-text {
+  font-size: 1.3rem;
+  width: 95px;
+  background-color: #ffffff;
+  padding: 0.6rem 0.75rem !important;
+}
+
+.uplode-img {
+  position: relative;
+  margin: 25px 0px;
+}
+
+.servise-form .info-btn-wrapper button {
+  margin: auto;
+}
